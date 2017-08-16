@@ -10,19 +10,25 @@ My tweak tends to be simple to let everyone adopt it easily. That means while I 
 
 1. Clone the repository:
 
-    git clone https://github.com/archer1609/vimrc.git
+<pre>
+git clone https://github.com/archer1609/vimrc.git
+</pre>
 
 2. Replace your ~/.vimrc and ~/.vim
 
-    cp vimrc/.vimrc ~
-    cp vimrc/vim/* ~/.vim
+<pre>
+cp vimrc/.vimrc ~
+cp vimrc/vim/* ~/.vim
+</pre>
 
 3. (Optional) Update plugins
 
-    \# Open vim
-    vim 
-    \# Type in command mode:
-    : PlugUpdate
+<pre>
+# Open vim
+vim 
+# Type in command mode:
+:PlugUpdate
+</pre>
 
 ## Plugins Included
 
@@ -30,7 +36,7 @@ My tweak tends to be simple to let everyone adopt it easily. That means while I 
 * [lightline.vim](https://github.com/itchyny/lightline.vim): A light-weight but good-looking and powerful enough status line replacement.
 * [NERDTree](https://github.com/scrooloose/nerdtree): A tree-view file explorer.
 * [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin): A extension on top of NERDTree providing git status flags in the file explorer.
-* [taglist](https://github.com/vim-scripts/taglist.vim): Provides the overview of the structure of the code.
+* [taglist](https://github.com/vim-scripts/taglist.vim): Provides overview of the structure of the code.
 
 ## Recommended Color Schemes
 
@@ -45,24 +51,28 @@ My tweak tends to be simple to let everyone adopt it easily. That means while I 
 Here are the customized usage in my configuration:
 
 __Transparent Background__
->The wombat256i color scheme supports transparent background in 256-color so you can use vim with transparent background in terminal.
+
+The wombat256i color scheme supports transparent background in 256-color so you can use vim with transparent background in terminal.
 
 __Switching Tab__
->You can use __Ctrl-Up__ and __Ctrl-Down__ to switch between tabs. They works in normal mode only for safety.
+
+> You can use __Ctrl-Up__ and __Ctrl-Down__ to switch between tabs. They works in normal mode only for safety.
 
 __Save and Load Session__
->You can save session by pressing __F2__ and then type the file name. To load a session, you can press __F3__ and type the file name. The default path is __~/.vim/sessions/__ .
+
+> You can save session by pressing __F2__ and then type the file name. To load a session, you can press __F3__ and type the file name. The default path is __~/.vim/sessions/__ .
 
 __Toggle NERDTree__
->Press __Ctrl-g__ to toggle NERTree's explorer
+
+> Press __Ctrl-g__ to toggle NERTree's explorer
 
 __Toggle taglist__
->Press __F8__ to toggle taglist
+
+> Press __F8__ to toggle taglist
 
 ## Troubleshooting
 
 __Taglist: Exuberant ctags (http://ctags.sf.net) not found in PATH. Plugin is not loaded.__
 
 Reason: ctags is missing
->  #sudo apt-get install ctags
-
+<pre>sudo apt-get install ctags</pre>
