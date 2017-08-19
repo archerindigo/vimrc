@@ -9,11 +9,7 @@
 """""""""""""""""""""""""""""
 " System
 """""""""""""""""""""""""""""
-runtime! debian.vim
 set nocompatible
-if filereadable("/etc/vim/vimrc.local")
-  source /etc/vim/vimrc.local
-endif
 
 
 """"""""""""""""""""""""""""""

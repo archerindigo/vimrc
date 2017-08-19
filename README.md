@@ -30,6 +30,11 @@ vim
 :PlugUpdate
 </pre>
 
+## Screenshots
+![Tab and Split Windows](/screenshots/1.png)
+
+![Nice Color](/screenshots/2.png)
+
 ## Plugins Included
 
 * [vim-plug](https://github.com/junegunn/vim-plug): A easy-to-use plugin manager.
