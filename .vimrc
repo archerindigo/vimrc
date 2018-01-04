@@ -3,7 +3,7 @@
 " Github: https://github.com/archer1609/vimrc
 " License: MIT
 "
-" Last Update: 16/08/2017
+" Last Update: 04/01/2018
 """"""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""
@@ -23,6 +23,7 @@ set showcmd             " Show command status
 set scrolloff=3         " Start to scroll when reaching 5 lines before the edge
 set mouse=a             " Enable mouse control in all modes
 set laststatus=2        " Show status line
+set cursorline          " Highlight current line
 if has("syntax")
   syntax on
 endif
@@ -56,6 +57,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug '~/.vim/plugged/taglist'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 """""""""""""""""""""""""""""
