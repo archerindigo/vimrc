@@ -1,10 +1,41 @@
 # My Tiny Vim Configuration
 
-Hi! I am a vim user for few years and recently I am using it more often and starting to tweak this powerful editor to make it even more powerful and convenient for my programming jobs. 
+This is my current vim configuration and I am still improving it from time to time. Feel free to clone/fork it if you find my configuration suitable for you.
 
-This is my current vim configuration and I am still improving it from time to time. Feel free to clone it if you find my configuration suitable for you.
+I am familar with the fundamental controls of vim and I tend to expand its functionalities, match my daily needs, while keeping it simple.
 
-My tweak tends to be simple to let everyone adopt it easily. That means while I am expending the vim with more useful functionalists, I would try to keep the control experience as natural, no fancy add-on, no complicated feature.
+## Features and Objectives
+
+* Better-looking interface
+* Programmer-oriented interface settings and formattings
+* Easier code exploration and navigation
+* Easier file navigation
+* Simple session save/load
+* Basic support of git
+
+You may look into .vimrc for details. It is still simple at the moment but improved vim a lot.
+
+## Screenshots
+![Tab and Split Windows](/screenshots/1.png)
+
+![Nice Color](/screenshots/2.png)
+
+## Plugins Included
+
+* [vim-plug](https://github.com/junegunn/vim-plug): A easy-to-use plugin manager.
+* [lightline.vim](https://github.com/itchyny/lightline.vim): A light-weight but good-looking and powerful enough status line replacement.
+* [NERDTree](https://github.com/scrooloose/nerdtree): A tree-view file explorer.
+* [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin): A extension on top of NERDTree providing git status flags in the file explorer.
+* [taglist](https://github.com/vim-scripts/taglist.vim): Provides overview of the structure of the code.
+* [fugitive.vim](https://github.com/tpope/vim-fugitive): A git wrapper
+
+## Recommended Color Schemes
+
+* [wombat256i](https://github.com/dsolstad/vim-wombat256i): My default scheme for vim. The dim but colorful syntax highlight could make you differentiate the components of your code easily. It also supports transparent background in terminal.
+* [wombat](https://github.com/vim-scripts/Wombat): My default scheme for gvim.
+* [jellybeans](https://github.com/nanotech/jellybeans.vim): Another dark and even more colorful scheme.
+* [molokai](https://github.com/tomasr/molokai): A dark scheme but has higher contrast.
+* [peaksea](https://github.com/vim-scripts/peaksea): This scheme is dark in background but light in syntax.
 
 ## Manual Installation
 
@@ -29,28 +60,6 @@ vim
 # Type in command mode:
 :PlugUpdate
 </pre>
-
-## Screenshots
-![Tab and Split Windows](/screenshots/1.png)
-
-![Nice Color](/screenshots/2.png)
-
-## Plugins Included
-
-* [vim-plug](https://github.com/junegunn/vim-plug): A easy-to-use plugin manager.
-* [lightline.vim](https://github.com/itchyny/lightline.vim): A light-weight but good-looking and powerful enough status line replacement.
-* [NERDTree](https://github.com/scrooloose/nerdtree): A tree-view file explorer.
-* [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin): A extension on top of NERDTree providing git status flags in the file explorer.
-* [taglist](https://github.com/vim-scripts/taglist.vim): Provides overview of the structure of the code.
-* [fugitive.vim](https://github.com/tpope/vim-fugitive): A git wrapper
-
-## Recommended Color Schemes
-
-* [wombat256i](https://github.com/dsolstad/vim-wombat256i): My default scheme for vim. The dim but colorful syntax highlight could make you differentiate the components of your code easily. It also supports transparent background in terminal.
-* [wombat](https://github.com/vim-scripts/Wombat): My default scheme for gvim.
-* [jellybeans](https://github.com/nanotech/jellybeans.vim): Another dark and even more colorful scheme.
-* [molokai](https://github.com/tomasr/molokai): A dark scheme but has higher contrast.
-* [peaksea](https://github.com/vim-scripts/peaksea): This scheme is dark in background but light in syntax.
 
 ## Usage Tips
 
