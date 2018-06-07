@@ -1,9 +1,9 @@
 """"""""""""""""""""""""""""""""""""""
 " Author: archer1609
-" Github: https://github.com/archer1609/vimrc
+" Github: https://gitlab.com/archerindigo/vimrc
 " License: MIT
 "
-" Last Update: 04/01/2018
+" Last Update: 2018-06-07
 """"""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""
@@ -72,7 +72,7 @@ else
     colors wombat256            " Default colorscheme for gvim
     set guioptions-=r           " Remove right-hand scroll bar
     set guioptions-=L           " Remove left-hand scroll bar
-    set guioptions-=T           " Remove toolbar
+    "set guioptions-=T           " Remove toolbar
     "set guioptions-=m          " Remove menu bar
 endif
 
@@ -90,6 +90,7 @@ nnoremap <C-Up> <Esc>gT
 nnoremap <C-Down> <Esc>gt
 nnoremap <F2> :mks! ~/.vim/sessions/session_
 nnoremap <F3> :source ~/.vim/sessions/session_
+nnoremap <F7> :!ctags -R .
 
 " Plugin related
 nnoremap <C-g> :NERDTreeToggle<CR>
