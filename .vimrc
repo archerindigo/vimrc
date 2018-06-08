@@ -1,9 +1,10 @@
 """"""""""""""""""""""""""""""""""""""
-" Author: archer1609
-" Github: https://gitlab.com/archerindigo/vimrc
+" Author: archerindigo
+" GitLab (Main): https://gitlab.com/archerindigo/vimrc
+" GitHub (Mirror): https://github.com/archerindigo/vimrc
 " License: MIT
 "
-" Last Update: 2018-06-07
+" Last Update: 2018-06-08
 """"""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""
