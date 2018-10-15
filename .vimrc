@@ -59,6 +59,7 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle', 'tag': '5.0.0' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug '~/.vim/plugged/taglist'
 Plug 'tpope/vim-fugitive', { 'tag': 'v2.4' }
+Plug 'gregsexton/gitv', {'on': ['Gitv'], 'tag': 'v1.3.1' }
 call plug#end()
 
 """""""""""""""""""""""""""""
