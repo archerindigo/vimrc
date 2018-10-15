@@ -37,7 +37,7 @@ You may look into .vimrc for details. It is still simple at the moment but impro
 * [molokai](https://github.com/tomasr/molokai): A dark scheme but has higher contrast.
 * [peaksea](https://github.com/vim-scripts/peaksea): This scheme is dark in background but light in syntax.
 
-## Manual Installation
+## Installation
 
 1. Clone the repository:
 
@@ -52,12 +52,15 @@ cp vimrc/.vimrc ~
 cp -r vimrc/.vim/* ~/.vim/
 </pre>
 
+The configuration will be applied to local profile only. If you want to make it take effect system-wide (e.g. take effect in sudo vim), you should copy the content of .vimrc to /etc/vim/vimrc
+
 3. (Optional) Update plugins
 
 <pre>
 # Open vim
 vim 
 # Type in command mode:
+:PlugClean
 :PlugUpdate
 </pre>
 

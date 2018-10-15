@@ -4,7 +4,7 @@
 " GitHub (Mirror): https://github.com/archerindigo/vimrc
 " License: MIT
 "
-" Last Update: 2018-06-08
+" Last Update: 2018-10-15
 """"""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""
@@ -21,7 +21,7 @@ set wrap                " Wrap long lines
 set showmatch           " Show matching brackets when closing it
 set matchtime=2         " Matching brackets highlight duration (200ms)
 set showcmd             " Show command status
-set scrolloff=3         " Start to scroll when reaching 5 lines before the edge
+set scrolloff=3         " Start to scroll when reaching lines before the edge
 set mouse=a             " Enable mouse control in all modes
 set laststatus=2        " Show status line
 set cursorline          " Highlight current line
@@ -55,10 +55,10 @@ set wildmode=list:longest,full  " Allow full list and auto-completion in wildmen
 """""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 Plug 'itchyny/lightline.vim'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle', 'tag': '5.0.0' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug '~/.vim/plugged/taglist'
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive', { 'tag': 'v2.4' }
 call plug#end()
 
 """""""""""""""""""""""""""""
@@ -73,8 +73,9 @@ else
     colors wombat256            " Default colorscheme for gvim
     set guioptions-=r           " Remove right-hand scroll bar
     set guioptions-=L           " Remove left-hand scroll bar
-    "set guioptions-=T           " Remove toolbar
+    "set guioptions-=T          " Remove toolbar
     "set guioptions-=m          " Remove menu bar
+    set guioptions+=a           " Enable copy-on-select
 endif
 
 " lightline specific settings
@@ -92,6 +93,10 @@ nnoremap <C-Down> <Esc>gt
 nnoremap <F2> :mks! ~/.vim/sessions/session_
 nnoremap <F3> :source ~/.vim/sessions/session_
 nnoremap <F7> :!ctags -R .
+vnoremap <C-c> "+y
+vnoremap <C-x> "+d
+nnoremap <C-p> "+p
+inoremap <C-v> <C-r>+
 
 " Plugin related
 nnoremap <C-g> :NERDTreeToggle<CR>

@@ -1,0 +1,12 @@
+[submodule ".vim/plugged/lightline.vim"]
+	path = .vim/plugged/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule ".vim/plugged/nerdtree"]
+	path = .vim/plugged/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule ".vim/plugged/vim-fugitive"]
+	path = .vim/plugged/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".vim/plugged/nerdtree-git-plugin"]
+	path = .vim/plugged/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
