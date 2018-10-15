@@ -1,19 +1,36 @@
 # My Tiny Vim Configuration
 
-This is my current vim configuration and I am still improving it from time to time. Feel free to clone/fork it if you find my configuration suitable for you.
+This is my vim configuration for my daily programming usage. I configured my vim to be programming-friendly with suitable tweaks to built-in features, interface, formatting, etc. The plugins I choose tend to be simple-to-use and practical. I don't mean to make a completely different editor or to make a fancy vim so I would keep everything simple and won't go far from typical vim practices.
 
-I am familar with the fundamental controls of vim and I tend to expand its functionalities, match my daily needs, while keeping it simple.
+I will update it from time to time. Feel free to clone/fork it if you find my configuration suitable for you.
+
+GitLab (Main): https://gitlab.com/archerindigo/vimrc
+
+GitHub (Mirror): https://github.com/archerindigo/vimrc
+
+# Table of Content
+1. [Featurs and Objectives](#feature-and-objectives)
+2. [Screenshots](#screenshots)
+3. [Plugins Included](#plugins-included)
+4. [Installation](#installation)
+5. [Usage Tips](#usage-tips)
 
 ## Features and Objectives
 
-* Better-looking interface
-* Programmer-oriented interface settings and formattings
+__Objectives:__
+* To provide nicer but remain simple interface
+* To include simple-to-use and practical plugins
+* To provide a programming-friendly environment
+
+__Major features included:__
+* Interface settings for more comfortable coding
+* Formatting that match general programming standard
 * Easier code exploration and navigation
 * Easier file navigation
 * Simple session save/load
-* Basic support of git
+* Support of git
 
-You may look into .vimrc for details. It is still simple at the moment but improved vim a lot.
+You may look into .vimrc to better understand what have set.
 
 ## Screenshots
 ![Tab and Split Windows](/screenshots/1.png)
@@ -28,6 +45,7 @@ You may look into .vimrc for details. It is still simple at the moment but impro
 * [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin): A extension on top of NERDTree providing git status flags in the file explorer.
 * [taglist](https://github.com/vim-scripts/taglist.vim): Provides overview of the structure of the code.
 * [fugitive.vim](https://github.com/tpope/vim-fugitive): A git wrapper
+* [gitv](https://github.com/gregsexton/gitv): A repository viewer similar to gitk. Based on fugitive.
 
 ## Recommended Color Schemes
 
@@ -41,8 +59,9 @@ You may look into .vimrc for details. It is still simple at the moment but impro
 
 1. Clone the repository:
 
+Third-party repositories are included in this repository. Remember to use --recursive to pull them all!
 <pre>
-git clone https://github.com/archer1609/vimrc.git
+git clone --recursive https://gitlab.com/archer1609/vimrc.git
 </pre>
 
 2. Replace your ~/.vimrc and ~/.vim
@@ -53,16 +72,6 @@ cp -r vimrc/.vim/* ~/.vim/
 </pre>
 
 The configuration will be applied to local profile only. If you want to make it take effect system-wide (e.g. take effect in sudo vim), you should copy the content of .vimrc to /etc/vim/vimrc
-
-3. (Optional) Update plugins
-
-<pre>
-# Open vim
-vim 
-# Type in command mode:
-:PlugClean
-:PlugUpdate
-</pre>
 
 ## Usage Tips
 
@@ -78,7 +87,7 @@ __Switching Tab__
 
 __Save and Load Session__
 
-> You can save session by pressing __F2__ and then type the file name. To load a session, you can press __F3__ and type the file name. The default path is __~/.vim/sessions/__ .
+> You can save session by pressing __F2__ and then type the file name. To load a session, you can press __F3__ and type the file name. The default storage is __~/.vim/sessions/__ .
 
 __Toggle NERDTree__
 
@@ -87,6 +96,10 @@ __Toggle NERDTree__
 __Toggle taglist__
 
 > Press __F8__ to toggle taglist
+
+__Copy and Paste__
+
+> You can select text using in visual mode and press __Ctrl-P__ to copy or __Ctrl-X__ to cut it into system clipboard. To paste the text, you can press __Ctrl-P__ in normal mode or __Ctrl-V__ in insert mode.
 
 ## Troubleshooting
 
