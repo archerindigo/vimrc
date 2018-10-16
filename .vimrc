@@ -72,6 +72,7 @@ if !has('gui_running')
     colors wombat256i           " Default colorscheme for console vim
 else
     colors wombat256            " Default colorscheme for gvim
+    "set guifont=Source\ Code\ Pro\ 10		" Recommended font
     set guioptions-=r           " Remove right-hand scroll bar
     set guioptions-=L           " Remove left-hand scroll bar
     "set guioptions-=T          " Remove toolbar
