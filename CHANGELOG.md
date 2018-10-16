@@ -5,17 +5,20 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-- Add gitv plugin for easiler git operations
+Nil
 
 ## [0.3.0] 2018-10-15
 ### Added
-- Ctrl-c, Ctrl-x, Ctrl-p, Ctrl-v as copy, cut, paste in normal mode, paste in insert mode respectively
+- Added the simpler Ctrl-C, Ctrl-X, Ctrl-P, Ctrl-V shortcut keys as system clipboard copy, cut and paste respectively
+- Added gitv v1.3.1 to support more git operations within vim
+- Added optional config for recommended font (Source Code Pro)
 
 ### Changed
 - Enabled copy-on-select in gvim
 - nerdtree uses v5.0.0 instead of master
 - vim-fugituve uses v2.4 instead of master
 - Other plugins updated to sync with master
+- Updated screenshots
 
 ### Fixed
 - Fixed plugins not downloaded due to missing .gitmodules
