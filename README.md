@@ -12,8 +12,9 @@ GitHub (Mirror): https://github.com/archerindigo/vimrc
 1. [Featurs and Objectives](#feature-and-objectives)
 2. [Screenshots](#screenshots)
 3. [Plugins Included](#plugins-included)
-4. [Installation](#installation)
-5. [Usage Tips](#usage-tips)
+4. [Color Schemes Included](#color-schemes-included)
+5. [Installation](#installation)
+6. [Usage Tips](#usage-tips)
 
 ## Features and Objectives
 
@@ -33,9 +34,13 @@ __Major features included:__
 You may look into .vimrc to better understand what have set.
 
 ## Screenshots
-![Tab and Split Windows](/screenshots/1.png)
+![2 C++ files with tabs, nerdtree and taglist in gvim](/screenshots/0.3.0-1.png)
+2 C++ files with tabs, nerdtree and taglist opened in gvim
 
-![Nice Color](/screenshots/2.png)
+![A markdown file opened in transparent terminal](/screenshots/0.3.0-2.png)
+A markdown file opened in a transparent terminal
+
+More in screenshots folder.
 
 ## Plugins Included
 
@@ -47,7 +52,7 @@ You may look into .vimrc to better understand what have set.
 * [fugitive.vim](https://github.com/tpope/vim-fugitive): A git wrapper
 * [gitv](https://github.com/gregsexton/gitv): A repository viewer similar to gitk. Based on fugitive.
 
-## Recommended Color Schemes
+## Color Schemes Included
 
 * [wombat256i](https://github.com/dsolstad/vim-wombat256i): My default scheme for vim. The dim but colorful syntax highlight could make you differentiate the components of your code easily. It also supports transparent background in terminal.
 * [wombat](https://github.com/vim-scripts/Wombat): My default scheme for gvim.
@@ -75,11 +80,11 @@ The configuration will be applied to local profile only. If you want to make it 
 
 ## Usage Tips
 
-Here are the customized usage in my configuration:
+Here are some customized usage in my configuration:
 
 __Transparent Background__
 
-The wombat256i color scheme supports transparent background in 256-color so you can use vim with transparent background in terminal.
+> The wombat256i color scheme supports transparent background in 256-color so you can use vim with transparent background in terminal.
 
 __Switching Tab__
 
@@ -91,7 +96,7 @@ __Save and Load Session__
 
 __Toggle NERDTree__
 
-> Press __Ctrl-g__ to toggle NERTree's explorer
+> Press __Ctrl-G__ to toggle NERTree's explorer
 
 __Toggle taglist__
 
@@ -99,7 +104,7 @@ __Toggle taglist__
 
 __Copy and Paste__
 
-> You can select text using in visual mode and press __Ctrl-P__ to copy or __Ctrl-X__ to cut it into system clipboard. To paste the text, you can press __Ctrl-P__ in normal mode or __Ctrl-V__ in insert mode.
+> You can select text in visual mode and press __Ctrl-P__ to copy or __Ctrl-X__ to cut it into system clipboard. To paste the text, you can press __Ctrl-P__ in normal mode or __Ctrl-V__ in insert mode.
 
 ## Troubleshooting
 
