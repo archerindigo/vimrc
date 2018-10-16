@@ -66,7 +66,7 @@ More in screenshots folder.
 
 Third-party repositories are included in this repository. Remember to use --recursive to pull them all!
 <pre>
-git clone --recursive https://gitlab.com/archer1609/vimrc.git
+git clone --recursive https://gitlab.com/archerindigo/vimrc.git
 </pre>
 
 2. Replace your ~/.vimrc and ~/.vim
@@ -82,37 +82,37 @@ The configuration will be applied to local profile only. If you want to make it 
 
 Here are some customized usage in my configuration:
 
-__Transparent Background__
+### Transparent Background
 
-> The wombat256i color scheme supports transparent background in 256-color so you can use vim with transparent background in terminal.
+The wombat256i color scheme supports transparent background in 256-color so you can use vim with transparent background in terminal.
 
-__Switching Tab__
+### Switching Tab
 
-> You can use __Ctrl-Up__ and __Ctrl-Down__ to switch between tabs. They works in normal mode only for safety.
+You can use __Ctrl-Up__ and __Ctrl-Down__ to switch between tabs. They works in normal mode only for safety.
 
-__Save and Load Session__
+### Save and Load Session
 
-> You can save session by pressing __F2__ and then type the file name. To load a session, you can press __F3__ and type the file name. The default storage is __~/.vim/sessions/__ .
+You can save session by pressing __F2__ and then type the file name. To load a session, you can press __F3__ and type the file name. The default storage is __~/.vim/sessions/__ .
 
-__Toggle NERDTree__
+### Toggle NERDTree
 
-> Press __Ctrl-G__ to toggle NERTree's explorer
+Press __Ctrl-G__ to toggle NERTree's explorer
 
-__Toggle taglist__
+### Toggle taglist
 
-> Press __F8__ to toggle taglist
+Press __F8__ to toggle taglist
 
-__Copy and Paste__
+### Copy and Paste to System Clipboard
 
-> You can select text in visual mode and press __Ctrl-P__ to copy or __Ctrl-X__ to cut it into system clipboard. To paste the text, you can press __Ctrl-P__ in normal mode or __Ctrl-V__ in insert mode.
+You can select text in visual mode and press __Ctrl-C__ to copy or __Ctrl-X__ to cut it into system clipboard. To paste the text, you can press __Ctrl-P__ in normal mode or __Ctrl-V__ in insert mode.
 
-__Recommended font__
+### Recommended font
 
-> It is recommended to use __Source Code Pro__ size 10 as the font. You can uncomment __"set guifont=Source\ Code\ Pro\ 10"__ in .vimrc to enforce the font in gvim. For vim you should set the terminal font by yourself.
+It is recommended to use __Source Code Pro__ size 10 as the font. You can uncomment __"set guifont=Source\ Code\ Pro\ 10"__ in .vimrc to enforce the font in gvim. For vim you should set the terminal font by yourself.
 
 ## Troubleshooting
 
-__Taglist: Exuberant ctags (http://ctags.sf.net) not found in PATH. Plugin is not loaded.__
+### Taglist: Exuberant ctags (http://ctags.sf.net) not found in PATH. Plugin is not loaded.__
 
 Reason: ctags is missing
 <pre>sudo apt-get install ctags</pre>
