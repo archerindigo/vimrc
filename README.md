@@ -48,7 +48,7 @@ More in screenshots folder.
 * [lightline.vim](https://github.com/itchyny/lightline.vim): A light-weight but good-looking and powerful enough status line replacement.
 * [NERDTree](https://github.com/scrooloose/nerdtree): A tree-view file explorer.
 * [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin): A extension on top of NERDTree providing git status flags in the file explorer.
-* [taglist](https://github.com/vim-scripts/taglist.vim): Provides overview of the structure of the code.
+* [tagbar](https://github.com/majutsushi/tagbar): Provides outline of your code.
 * [fugitive.vim](https://github.com/tpope/vim-fugitive): A git wrapper
 * [gitv](https://github.com/gregsexton/gitv): A repository viewer similar to gitk. Based on fugitive.
 
@@ -100,7 +100,7 @@ Press __Ctrl-G__ to toggle NERTree's explorer
 
 ### Toggle taglist
 
-Press __F8__ to toggle taglist
+Press __F8__ to toggle tagbar
 
 ### Copy and Paste to System Clipboard
 
