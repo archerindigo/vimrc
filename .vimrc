@@ -4,7 +4,7 @@
 " GitHub (Mirror): https://github.com/archerindigo/vimrc
 " License: MIT
 "
-" Last Update: 2018-10-15
+" Last Update: 2019-03-26
 """"""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""
@@ -57,9 +57,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle', 'tag': '5.0.0' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug '~/.vim/plugged/taglist'
 Plug 'tpope/vim-fugitive', { 'tag': 'v2.4' }
 Plug 'gregsexton/gitv', {'on': ['Gitv'], 'tag': 'v1.3.1' }
+Plug 'majutsushi/tagbar', {'on':['TagbarToggle'], 'tag': 'v2.7' }
 call plug#end()
 
 """""""""""""""""""""""""""""
@@ -102,4 +102,4 @@ inoremap <C-v> <C-r>+
 
 " Plugin related
 nnoremap <C-g> :NERDTreeToggle<CR>
-nnoremap <silent> <F8> :TlistToggle<CR>
+nnoremap <silent> <F8> :TagbarToggle<CR>
