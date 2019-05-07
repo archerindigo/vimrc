@@ -60,6 +60,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-fugitive', { 'tag': 'v2.4' }
 Plug 'gregsexton/gitv', {'on': ['Gitv'], 'tag': 'v1.3.1' }
 Plug 'majutsushi/tagbar', {'on':['TagbarToggle'], 'tag': 'v2.7' }
+Plug 'nathanaelkane/vim-indent-guides', { 'tag': '1.6' }
 call plug#end()
 
 """""""""""""""""""""""""""""
@@ -103,3 +104,6 @@ inoremap <C-v> <C-r>+
 " Plugin related
 nnoremap <C-g> :NERDTreeToggle<CR>
 nnoremap <silent> <F8> :TagbarToggle<CR>
+"let g:indent_guides_enable_on_vim_startup=1  " Enable indent guides on vim startup. By default '<leader>ig' can also toggle the plugin
+let g:indent_guides_guides_start_level=2      " Start indent guides at 2nd level
+let g:indent_guides_guide_size=1              " Width of the guides

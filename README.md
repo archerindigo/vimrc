@@ -49,7 +49,8 @@ More in screenshots folder.
 * [NERDTree](https://github.com/scrooloose/nerdtree): A tree-view file explorer.
 * [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin): A extension on top of NERDTree providing git status flags in the file explorer.
 * [tagbar](https://github.com/majutsushi/tagbar): Provides outline of your code.
-* [fugitive.vim](https://github.com/tpope/vim-fugitive): A git wrapper
+* [vim-indent-guides](https://github.com/valloric/vim-indent-guides): Add visual guides to indent levels.
+* [fugitive.vim](https://github.com/tpope/vim-fugitive): A git wrapper.
 * [gitv](https://github.com/gregsexton/gitv): A repository viewer similar to gitk. Based on fugitive.
 
 ## Color Schemes Included
@@ -88,31 +89,35 @@ The wombat256i color scheme supports transparent background in 256-color so you 
 
 ### Switching Tab
 
-You can use __Ctrl-Up__ and __Ctrl-Down__ to switch between tabs. They works in normal mode only for safety.
+You can use `Ctrl-Up` and `Ctrl-Down` to switch between tabs. They works in normal mode only for safety.
 
 ### Save and Load Session
 
-You can save session by pressing __F2__ and then type the file name. To load a session, you can press __F3__ and type the file name. The default storage is __~/.vim/sessions/__ .
+You can save session by pressing `F2` and then type the file name. To load a session, you can press `F3` and type the file name. The default storage is `~/.vim/sessions/` .
 
 ### Toggle NERDTree
 
-Press __Ctrl-G__ to toggle NERTree's explorer
+Press `Ctrl-G` to toggle NERTree's explorer
 
 ### Toggle taglist
 
-Press __F8__ to toggle tagbar
+Press `F8` to toggle tagbar
+
+### Toggle Indent Guides
+
+Press `<Leader> + i + g` to toggle indent guides. `<Leader>` maybe the `\` key on your keyboard. You may also enable it by defult by uncommenting the line `let g:indent_guides_enable_on_vim_startup=1`
 
 ### Copy and Paste to System Clipboard
 
-You can select text in visual mode and press __Ctrl-C__ to copy or __Ctrl-X__ to cut it into system clipboard. To paste the text, you can press __Ctrl-P__ in normal mode or __Ctrl-V__ in insert mode.
+You can select text in visual mode and press `Ctrl-C` to copy or `Ctrl-X` to cut it into system clipboard. To paste the text, you can press `Ctrl-P` in normal mode or `Ctrl-V` in insert mode.
 
 ### Recommended font
 
-It is recommended to use __Source Code Pro__ size 10 as the font. You can uncomment __"set guifont=Source\ Code\ Pro\ 10"__ in .vimrc to enforce the font in gvim. For vim you should set the terminal font by yourself.
+It is recommended to use __Source Code Pro__ size 10 as the font. You can uncomment `"set guifont=Source\ Code\ Pro\ 10"` in .vimrc to enforce the font in gvim. For vim you should set the terminal font by yourself.
 
 ## Troubleshooting
 
-### Taglist: Exuberant ctags (http://ctags.sf.net) not found in PATH. Plugin is not loaded.__
+### Taglist: Exuberant ctags (http://ctags.sf.net) not found in PATH. Plugin is not loaded.
 
 Reason: ctags is missing
 <pre>sudo apt-get install ctags</pre>
