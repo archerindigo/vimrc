@@ -1,5 +1,7 @@
 # My Tiny Vim Configuration
 
+This is a light tweak of vim but it could brings fair enough enhancement to programmers.
+
 This is my vim configuration for my daily programming usage. I configured my vim to be programming-friendly with suitable tweaks to built-in features, interface, formatting, etc. The plugins I choose tend to be simple-to-use and practical. I don't mean to make a completely different editor or to make a fancy vim so I would keep everything simple and won't go far from typical vim practices.
 
 I will update it from time to time. Feel free to clone/fork it if you find my configuration suitable for you.
