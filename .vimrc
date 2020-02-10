@@ -4,7 +4,7 @@
 " GitHub (Mirror): https://github.com/archerindigo/vimrc
 " License: MIT
 "
-" Last Update: 2019-03-26
+" Last Update: 2019-05-07
 """"""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""
