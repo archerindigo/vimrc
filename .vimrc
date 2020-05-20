@@ -23,6 +23,7 @@ set matchtime=2         " Matching brackets highlight duration (200ms)
 set showcmd             " Show command status
 set scrolloff=3         " Start to scroll when reaching lines before the edge
 set mouse=a             " Enable mouse control in all modes
+set ttymouse=xterm2     " Resolve mouse mode problem in tmux
 set laststatus=2        " Show status line
 set cursorline          " Highlight current line
 if has("syntax")
