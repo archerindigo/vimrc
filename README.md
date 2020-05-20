@@ -53,7 +53,7 @@ More in screenshots folder.
 * [tagbar](https://github.com/majutsushi/tagbar): Provides outline of your code.
 * [vim-indent-guides](https://github.com/valloric/vim-indent-guides): Add visual guides to indent levels.
 * [fugitive.vim](https://github.com/tpope/vim-fugitive): A git wrapper.
-* [gv.vom](https://github.com/junegunn/gv.vim): A repository viewer similar to gitk. Based on fugitive.
+* [gv.vim](https://github.com/junegunn/gv.vim): A repository viewer similar to gitk. Based on fugitive.
 * [vim-tldr](https://github.com/wlemuel/vim-tldr): View simplified man pages within vim
 
 ## Color Schemes Included
