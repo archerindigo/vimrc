@@ -92,8 +92,8 @@ set noshowmode
 " Key remap
 """""""""""""""""""""""""""""
 " Non-plugin related
-nnoremap <C-Up> <Esc>gT
-nnoremap <C-Down> <Esc>gt
+nnoremap <C-h> <Esc>gT
+nnoremap <C-l> <Esc>gt
 nnoremap <F2> :mks! ~/.vim/sessions/session_
 nnoremap <F3> :source ~/.vim/sessions/session_
 nnoremap <F7> :!ctags -R .
