@@ -92,7 +92,7 @@ The wombat256i color scheme supports transparent background in 256-color so you 
 
 ### Switching Tab
 
-You can use `Ctrl-Up` and `Ctrl-Down` to switch between tabs. They works in normal mode only for safety.
+You can use `Ctrl-h` and `Ctrl-l` to switch between tabs. They works in normal mode only for safety.
 
 ### Save and Load Session
 
