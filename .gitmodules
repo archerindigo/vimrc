@@ -1,3 +1,6 @@
+[submodule ".vim/plugged/gv.vim"]
+	path = .vim/plugged/gv.vim
+	url = https://github.com/junegunn/gv.vim.git
 [submodule ".vim/plugged/lightline.vim"]
 	path = .vim/plugged/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
@@ -19,3 +22,6 @@
 [submodule ".vim/plugged/vim-indent-guides"]
 	path = .vim/plugged/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides
+[submodule ".vim/plugged/vim-tldr"]
+	path = .vim/plugged/vim-tldr
+	url = https://github.com/wlemuel/vim-tldr.git
