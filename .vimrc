@@ -4,7 +4,7 @@
 " GitHub (Mirror): https://github.com/archerindigo/vimrc
 " License: MIT
 "
-" Last Update: 2020-05-20
+" Last Update: 2021-06-02
 """"""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""
@@ -45,7 +45,7 @@ filetype plugin indent on       " Enable specific formatting rules support for c
 " Searching
 """""""""""""""""""""""""""""
 set hlsearch                    " Highlight search results
-"set incsearch                  " Instantly search while typing
+set incsearch                   " Instantly search while typing
 set ignorecase                  " Case-insensitive search
 set smartcase                   " Switch to case-sensitive search when keywords contain uppercase
 set wildmenu                    " Enable wildmenu while entering tab in command mode
