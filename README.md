@@ -60,13 +60,9 @@ You may look into `.vimrc` to get better understanding of what have set.
 
 ### Screenshots
 
-![2 C++ files with tabs, nerdtree and taglist in gvim](/screenshots/0.3.0-1.png)
-2 C++ files with tabs, nerdtree and taglist opened in gvim
+![](https://i.imgur.com/HtjmqO4.gif)
 
-![A markdown file opened in transparent terminal](/screenshots/0.3.0-2.png)
-A markdown file opened in a transparent terminal
-
-More in screenshots folder.
+The color scheme used is sonokai-maia without transparent background.
 
 ### Environment
 
