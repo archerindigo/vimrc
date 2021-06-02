@@ -25,3 +25,9 @@
 [submodule ".vim/plugged/vim-tldr"]
 	path = .vim/plugged/vim-tldr
 	url = https://github.com/wlemuel/vim-tldr.git
+[submodule ".vim/plugged/vim-one"]
+	path = .vim/plugged/vim-one
+	url = https://github.com/rakr/vim-one.git
+[submodule ".vim/plugged/sonokai"]
+	path = .vim/plugged/sonokai
+	url = https://github.com/sainnhe/sonokai.git
