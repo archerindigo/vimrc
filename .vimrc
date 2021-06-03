@@ -4,7 +4,7 @@
 " GitHub (Mirror): https://github.com/archerindigo/vimrc
 " License: MIT
 "
-" Last Update: 2020-05-20
+" Last Update: 2021-06-02
 """"""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""
@@ -45,7 +45,7 @@ filetype plugin indent on       " Enable specific formatting rules support for c
 " Searching
 """""""""""""""""""""""""""""
 set hlsearch                    " Highlight search results
-"set incsearch                  " Instantly search while typing
+set incsearch                   " Instantly search while typing
 set ignorecase                  " Case-insensitive search
 set smartcase                   " Switch to case-sensitive search when keywords contain uppercase
 set wildmenu                    " Enable wildmenu while entering tab in command mode
@@ -56,13 +56,15 @@ set wildmode=list:longest,full  " Allow full list and auto-completion in wildmen
 """""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 Plug 'itchyny/lightline.vim'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle', 'tag': '6.7.11' }
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle', 'tag': '6.10.9' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tpope/vim-fugitive', { 'tag': 'v3.2' }
-Plug 'majutsushi/tagbar', {'on':['TagbarToggle'], 'tag': 'v2.7' }
+Plug 'tpope/vim-fugitive', { 'tag': 'v3.3' }
+Plug 'majutsushi/tagbar', {'on':['TagbarToggle'], 'tag': 'v3.0.0' }
 Plug 'nathanaelkane/vim-indent-guides', { 'tag': '1.6' }
 Plug 'wlemuel/vim-tldr', { 'tag': 'v0.4' }
 Plug 'junegunn/gv.vim'
+Plug 'rakr/vim-one'
+Plug 'sainnhe/sonokai'
 call plug#end()
 
 """""""""""""""""""""""""""""
@@ -70,11 +72,22 @@ call plug#end()
 " for vim and gvim
 """""""""""""""""""""""""""""
 set background=dark
+
+" sonokai specific configurations
+let g:sonokai_style = 'maia'        " Style of sonokai color
+let g:sonokai_enable_italic = 1     " Allow italic text (may not work on some terminals)
+let g:sonokai_transparent_background = 1    " Use transparent background color
+                                            " with respect to the terminal instead of
+                                            " the original sonokai styled background
+
+" One specific configurations
+let g:one_allow_italics = 1
+
+colorscheme sonokai             " Default color scheme for both vim and gvim
+
 if !has('gui_running')
     set t_Co=256
-    colors wombat256i           " Default colorscheme for console vim
 else
-    colors wombat256            " Default colorscheme for gvim
     "set guifont=Source\ Code\ Pro\ 10		" Recommended font
     set guioptions-=r           " Remove right-hand scroll bar
     set guioptions-=L           " Remove left-hand scroll bar
@@ -83,10 +96,14 @@ else
     set guioptions+=a           " Enable copy-on-select
 endif
 
+" Set true color if supported
+"" tmux is usually buggy in true color so keep this setting out
+if (has("termguicolors") && empty($TMUX))
+    set termguicolors
+endif
+
 " lightline specific settings
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ }
+let g:lightline = { 'colorscheme': 'sonokai' }
 set noshowmode
 
 """""""""""""""""""""""""""""
