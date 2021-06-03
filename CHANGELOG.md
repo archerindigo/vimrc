@@ -7,9 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 Nil
 
-## \[1.0.0\] 2021-06-03
+## \[v1.0.0\] 2021-06-03
 
-From this version I switched to sonokai as my default color theme and start fully adopt into true-color terminal environment. Therefore from now on the configuration may not work that well in 256-color terminals. If you encounter color problem in older terminals, you may try switching to the 256-color color scheme I used (e.g. wombat256i) or use my previous configuration (<1.0) instead.
+From this version I switched to sonokai as my default color scheme and started to fully adopt into true-color terminal environment. Therefore, from now on the configuration may not work that well in 256-color terminals. If you encounter color display problem, you may try switching back to the 256-color color scheme I used (e.g. wombat256i) or revert to my previous configuration (<1.0) instead.
+
+I didn't realize that some people actually use my configuration. Hope you enjoy!
 
 ### Added
 
@@ -30,7 +32,7 @@ From this version I switched to sonokai as my default color theme and start full
     - nerdtree-git (f522a09 -> 4524fb4)
     - tagbar (2.7 -> 3.0.0)
     - vim-fugitive (v3.2 -> v3.3)
-- Turn on termguicolors for true color support
+- Turned on termguicolors for true color support
 
 ### Removed
 
