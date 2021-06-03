@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 Nil
 
-## \[1.0.0\] 2021-06-01
+## \[1.0.0\] 2021-06-03
 
 From this version I switched to sonokai as my default color theme and start fully adopt into true-color terminal environment. Therefore from now on the configuration may not work that well in 256-color terminals. If you encounter color problem in older terminals, you may try switching to the 256-color color scheme I used (e.g. wombat256i) or use my previous configuration (<1.0) instead.
 
