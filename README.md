@@ -135,7 +135,7 @@ sudo ln -s /home/<your_username>/.vim /root/.vim
 
 ### Update
 
-For stability, plugins and color schemes are initially downloaded as fixed version.
+For stability, plugins and color schemes are initially downloaded as fixed version. Some plugins has fixed version tag set in `.vimrc`. You can update or remove the tag. Then run `:PlugUpdate` in vim. You may encounter `PlugClean required` message in the first run. It is normal as the plugins were not initially be downloaded by Plug. Simply run `:PlugClean` and then `:PlugUpdate` to reinstall to the desired version.
 
 ## Usage Tips
 
