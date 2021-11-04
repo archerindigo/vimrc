@@ -4,7 +4,7 @@
 " GitHub (Mirror): https://github.com/archerindigo/vimrc
 " License: MIT
 "
-" Last Update: 2021-11-04
+" Last Update: 2021-11-05
 """"""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""
@@ -114,10 +114,10 @@ set noshowmode
 nnoremap <C-h> <Esc>gT
 nnoremap <C-l> <Esc>gt
 
-"" Ctrl-a as select all
-nnoremap <C-a> <Esc>gg<S-v>G
-inoremap <C-a> <C-c>gg<S-v>G
-vnoremap <C-a> <Esc>gg<S-v>G
+"" Ctrl-a as select all (would override the original increment key)
+"nnoremap <C-a> <Esc>gg<S-v>G
+"inoremap <C-a> <C-c>gg<S-v>G
+"vnoremap <C-a> <Esc>gg<S-v>G
 
 "" Ctrl-c/x as copy/cut in visual mode
 vnoremap <C-c> "+y
