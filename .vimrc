@@ -4,7 +4,7 @@
 " GitHub (Mirror): https://github.com/archerindigo/vimrc
 " License: MIT
 "
-" Last Update: 2021-06-02
+" Last Update: 2021-11-04
 """"""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""
@@ -110,15 +110,28 @@ set noshowmode
 " Key remap
 """""""""""""""""""""""""""""
 " Non-plugin related
+"" Ctrl-h/l as tab switching
 nnoremap <C-h> <Esc>gT
 nnoremap <C-l> <Esc>gt
+
+"" Ctrl-a as select all
+nnoremap <C-a> <Esc>gg<S-v>G
+inoremap <C-a> <C-c>gg<S-v>G
+vnoremap <C-a> <Esc>gg<S-v>G
+
+"" Ctrl-c/x as copy/cut in visual mode
+vnoremap <C-c> "+y
+vnoremap <C-x> "+d
+
+"" Ctrl-p as paste in normal mode; Ctrl-v as paste in insert mode
+nnoremap <C-p> "+p
+inoremap <C-v> <C-r>+
+
+"" Function keys
 nnoremap <F2> :mks! ~/.vim/sessions/session_
 nnoremap <F3> :source ~/.vim/sessions/session_
 nnoremap <F7> :!ctags -R .
-vnoremap <C-c> "+y
-vnoremap <C-x> "+d
-nnoremap <C-p> "+p
-inoremap <C-v> <C-r>+
+
 
 " Plugin related
 nnoremap <C-g> :NERDTreeToggle<CR>
