@@ -56,10 +56,10 @@ set wildmode=list:longest,full  " Allow full list and auto-completion in wildmen
 """""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 Plug 'itchyny/lightline.vim'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle', 'tag': '6.10.9' }
+Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle', 'tag': '6.10.16' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tpope/vim-fugitive', { 'tag': 'v3.3' }
-Plug 'majutsushi/tagbar', {'on':['TagbarToggle'], 'tag': 'v3.0.0' }
+Plug 'tpope/vim-fugitive', { 'tag': 'v3.7' }
+Plug 'preservim/tagbar', { 'on':['TagbarToggle'] }
 Plug 'nathanaelkane/vim-indent-guides', { 'tag': '1.6' }
 Plug 'wlemuel/vim-tldr', { 'tag': 'v0.4' }
 Plug 'junegunn/gv.vim'
